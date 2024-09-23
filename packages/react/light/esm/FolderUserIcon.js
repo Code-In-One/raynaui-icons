@@ -1,0 +1,26 @@
+import * as React from "react";
+function FolderUserIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M2.25 6.567A3.567 3.567 0 0 1 5.817 3h2.547c.57 0 1.075.295 1.414.532a9 9 0 0 1 1.082.928c.314.31.619.635.88.914l.055.058c.281.301.485.515.624.64l.037.024a2 2 0 0 0 .193.104h5.602a4 4 0 0 1 3.999 4v2.3a1 1 0 1 1-2 0v-2.3c0-1.105-.895-2-1.999-2h-5.716a1.6 1.6 0 0 1-.516-.099 3 3 0 0 1-.338-.148 3 3 0 0 1-.573-.371c-.228-.2-.508-.5-.773-.782l-.05-.053a30 30 0 0 0-.828-.861 7 7 0 0 0-.824-.715c-.169-.118-.261-.155-.29-.167L8.334 5H5.817c-.865 0-1.567.702-1.567 1.567V17a2 2 0 0 0 2 2h7a1 1 0 1 1 0 2h-7a4 4 0 0 1-4-4z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M15.45 16a3 3 0 1 1 4.707 2.467 4.35 4.35 0 0 1 1.545 1.524 1.7 1.7 0 0 1 .248.851 1.56 1.56 0 0 1-.24.842c-.27.435-.703.695-1.041.85-.7.322-1.594.466-2.219.466s-1.518-.144-2.219-.466c-.338-.155-.772-.415-1.042-.85a1.56 1.56 0 0 1-.239-.842 1.7 1.7 0 0 1 .248-.85 4.35 4.35 0 0 1 1.545-1.525A3 3 0 0 1 15.45 16m3-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m0 5c-.48 0-.99.309-1.34.736.388.166.956.264 1.34.264s.952-.098 1.34-.264c-.35-.427-.86-.736-1.34-.736",
+    clipRule: "evenodd"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(FolderUserIcon);
+export default ForwardRef;

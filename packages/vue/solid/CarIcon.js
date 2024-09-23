@@ -1,0 +1,13 @@
+const { createElementVNode: _createElementVNode, openBlock: _openBlock, createElementBlock: _createElementBlock } = require("vue")
+
+module.exports = function render(_ctx, _cache) {
+  return (_openBlock(), _createElementBlock("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon"
+  }, [
+    _createElementVNode("path", { d: "M3.646 10.56 3.5 11h18l-.146-.44.853-.853a1 1 0 0 0-1.414-1.414l-.147.146-.69-2.071A2 2 0 0 0 18.058 5H6.942a2 2 0 0 0-1.898 1.368l-.69 2.071-.147-.146a1 1 0 0 0-1.414 1.414zM22.5 12v3.5A1.5 1.5 0 0 1 21 17H4a1.5 1.5 0 0 1-1.5-1.5V12zM4 20v-2h4.5v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1M16.5 18H21v2a1 1 0 0 1-1 1h-2.5a1 1 0 0 1-1-1z" })
+  ]))
+}

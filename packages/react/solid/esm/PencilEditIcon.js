@@ -1,0 +1,24 @@
+import * as React from "react";
+function PencilEditIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M6 2a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4v-6a1 1 0 1 0-2 0v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2.684a1 1 0 1 0 0-2z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "m6.806 15.57.247-1.73a3 3 0 0 1 .848-1.697l7.303-7.303 3.462 3.462-7.302 7.303a3 3 0 0 1-1.698.848l-1.729.248a1 1 0 0 1-1.131-1.132M20.07 6.877 16.63 3.436a2.449 2.449 0 0 1 3.441 3.441"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(PencilEditIcon);
+export default ForwardRef;

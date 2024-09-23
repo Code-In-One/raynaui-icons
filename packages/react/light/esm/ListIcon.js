@@ -1,0 +1,41 @@
+import * as React from "react";
+function ListIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    stroke: "#000",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M21.75 4h-14M21.75 12h-14M21.75 20h-14"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 1.25,
+    cy: 1.25,
+    r: 1.25,
+    transform: "matrix(-1 0 0 1 4.75 2.75)"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 1.25,
+    cy: 1.25,
+    r: 1.25,
+    transform: "matrix(-1 0 0 1 4.75 10.75)"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 1.25,
+    cy: 1.25,
+    r: 1.25,
+    transform: "matrix(-1 0 0 1 4.75 18.75)"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(ListIcon);
+export default ForwardRef;

@@ -1,0 +1,17 @@
+import { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "vue"
+
+export default function render(_ctx, _cache) {
+  return (_openBlock(), _createElementBlock("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon"
+  }, [
+    _createElementVNode("path", {
+      "fill-rule": "evenodd",
+      d: "M17.25 3a2.5 2.5 0 0 1 2.5 2.5V6h2a1 1 0 1 1 0 2h-2v.5a2.5 2.5 0 0 1-2.5 2.5h-3a2.5 2.5 0 0 1-2.5-2.5V8h-8a1 1 0 0 1 0-2h8v-.5a2.5 2.5 0 0 1 2.5-2.5zm.5 2.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5M5.75 16h-2a1 1 0 1 0 0 2h2v.5a2.5 2.5 0 0 0 2.5 2.5h6a2.5 2.5 0 0 0 2.5-2.5V18h5a1 1 0 1 0 0-2h-5v-.5a2.5 2.5 0 0 0-2.5-2.5h-6a2.5 2.5 0 0 0-2.5 2.5zm9-.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5z",
+      "clip-rule": "evenodd"
+    })
+  ]))
+}

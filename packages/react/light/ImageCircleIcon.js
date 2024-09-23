@@ -1,0 +1,26 @@
+const React = require("react");
+function ImageCircleIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M6.933 8.798c.481.16.859.538 1.019 1.02.163.489.856.489 1.019 0 .16-.482.538-.86 1.019-1.02a.537.537 0 0 0 0-1.019A1.61 1.61 0 0 1 8.97 6.76a.537.537 0 0 0-1.018 0c-.16.481-.538.859-1.019 1.02a.537.537 0 0 0 0 1.018"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M12.75 1c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11m-9 11a9 9 0 1 1 17.896 1.374l-4.005-2.649h-.002a3 3 0 0 0-4.565 1.74l-.004.012-.349 1.414a3 3 0 0 0-3.613 1.188l-2.534 3.467A8.98 8.98 0 0 1 3.75 12m12.784.391 4.551 3.01a9 9 0 0 1-8.057 5.595l1.982-8.032a1 1 0 0 1 1.521-.575zm-4.302 3.485-1.224 4.956a9 9 0 0 1-2.837-1.082l2.596-3.551.02-.034a1 1 0 0 1 1.344-.346z",
+    clipRule: "evenodd"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(ImageCircleIcon);
+module.exports = ForwardRef;

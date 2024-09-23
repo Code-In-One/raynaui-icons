@@ -1,0 +1,40 @@
+{
+  "name": "rayna-icons",
+  "version": "1.0.0",
+  "description": "Icons set from Rayna UI design kit",
+  "main": "index.ts",
+  "scripts": {
+    "verify": "node ./scripts/verify-names.js",
+    "build": "npm run build-light && npm run build-solid && npm run build-react && npm run build-vue",
+    "build-react": "node ./scripts/build.js react",
+    "build-vue": "node ./scripts/build.js vue",
+    "build-light": "rimraf ./src/optimized/light && svgo --config=svgo.light.mjs -f ./src/raw/light -o ./src/optimized/light --pretty",
+    "build-solid": "rimraf ./src/optimized/solid && svgo --config=svgo.solid.mjs -f ./src/raw/solid -o ./src/optimized/solid --pretty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-In-One/rayna-icons.git"
+  },
+  "keywords": [
+    "Rayna",
+    "Rayna Icons",
+    "Rayna UI",
+    "Icons"
+  ],
+  "author": "mycreedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-In-One/rayna-icons/issues"
+  },
+  "homepage": "https://github.com/Code-In-One/rayna-icons#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@svgr/core": "^5.5.0",
+    "@vue/compiler-dom": "^3.0.5",
+    "camelcase": "^6.0.0",
+    "prettier": "^2.8.7",
+    "svgo": "^3.0.2",
+    "rimraf": "^6.0.1"
+  }
+}

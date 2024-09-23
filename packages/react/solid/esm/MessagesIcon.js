@@ -1,0 +1,28 @@
+import * as React from "react";
+function MessagesIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M18.5 3.5h-12a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h2a3 3 0 0 1 1.8.6l1.21.907a3 3 0 0 1-.01-.22v-4.279c0-1.385 1.075-2.508 2.4-2.508h7.2q.204 0 .4.035V6.5a3 3 0 0 0-3-3m-12 5a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2h-10a1 1 0 0 1-1-1m1 3.5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z",
+    clipRule: "evenodd"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M12.5 15a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3.911a1.5 1.5 0 0 1-1.5 1.5c-.47 0-.927.147-1.31.42l-1.053.753a1 1 0 0 1-1.163 0l-.858-.613a3 3 0 0 0-1.745-.56H14.5a2 2 0 0 1-2-2zm3-.5a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm-1 3.5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1",
+    clipRule: "evenodd"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(MessagesIcon);
+export default ForwardRef;

@@ -1,0 +1,24 @@
+import * as React from "react";
+function Box1Icon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M5.25 2.5a3 3 0 0 0-3 3v2a2 2 0 0 0 1 1.732V17.5a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V9.232a2 2 0 0 0 1-1.732v-2a3 3 0 0 0-3-3zm2 17a2 2 0 0 1-2-2v-8h14v8a2 2 0 0 1-2 2zm12-15a1 1 0 0 1 1 1v2h-16v-2a1 1 0 0 1 1-1z",
+    clipRule: "evenodd"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(Box1Icon);
+export default ForwardRef;

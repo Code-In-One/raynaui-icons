@@ -1,0 +1,24 @@
+import * as React from "react";
+function RepeatOnceIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M17.974 2.369a1 1 0 0 1 1.407-.145l3 2.44a1 1 0 0 1 .067 1.493l-3 2.92a1 1 0 0 1-1.396-1.434L19.29 6.44H10.31A5.56 5.56 0 0 0 4.75 12a1 1 0 1 1-2 0 7.56 7.56 0 0 1 7.56-7.56h8.626l-.817-.664a1 1 0 0 1-.145-1.407M7.526 21.631a1 1 0 0 1-1.407.145l-3-2.44a1 1 0 0 1-.066-1.493l3-2.92a1 1 0 1 1 1.394 1.434L6.211 17.56h8.979A5.56 5.56 0 0 0 20.75 12a1 1 0 1 1 2 0 7.56 7.56 0 0 1-7.56 7.56H6.564l.817.664a1 1 0 0 1 .145 1.407"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M13.504 9.848a1.12 1.12 0 0 0-1.72-.947l-1.257.796a.58.58 0 0 0-.27.489c0 .454.501.931.886.69l.5-.31c.048-.03.177-.09.23-.11.046-.018.093.018.093.07v4.705a.769.769 0 1 0 1.538 0z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(RepeatOnceIcon);
+export default ForwardRef;

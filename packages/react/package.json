@@ -1,0 +1,58 @@
+{
+  "name": "@rayna-icons/react",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/Code-In-One/rayna-icons#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-In-One/rayna-icons.git"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.esm.js",
+      "require": "./index.js"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    },
+    "./light": {
+      "types": "./light/index.d.ts",
+      "import": "./light/esm/index.js",
+      "require": "./light/index.js"
+    },
+    "./light/*": {
+      "types": "./light/*.d.ts",
+      "import": "./light/esm/*.js",
+      "require": "./light/*.js"
+    },
+    "./light/*.js": {
+      "types": "./light/*.d.ts",
+      "import": "./light/esm/*.js",
+      "require": "./light/*.js"
+    },
+    "./solid": {
+      "types": "./solid/index.d.ts",
+      "import": "./solid/esm/index.js",
+      "require": "./solid/index.js"
+    },
+    "./solid/*": {
+      "types": "./solid/*.d.ts",
+      "import": "./solid/esm/*.js",
+      "require": "./solid/*.js"
+    },
+    "./solid/*.js": {
+      "types": "./solid/*.d.ts",
+      "import": "./solid/esm/*.js",
+      "require": "./solid/*.js"
+    }
+  }
+}

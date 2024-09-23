@@ -1,0 +1,22 @@
+const React = require("react");
+function PoundsIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M16.805 2.8a6.88 6.88 0 0 0-9.3 6.2H4.5a1 1 0 0 0 0 2h3v1.5h-3a1 1 0 1 0 0 2h3v.262a6.88 6.88 0 0 0 9.305 6.438l.474-.179a6.75 6.75 0 0 0 4.195-4.796 1 1 0 1 0-1.948-.45 4.75 4.75 0 0 1-2.952 3.375l-.474.178a4.88 4.88 0 0 1-6.6-4.566V14.5h6a1 1 0 1 0 0-2h-6V11h6a1 1 0 1 0 0-2H9.506A4.88 4.88 0 0 1 16.1 4.672l.474.178a4.75 4.75 0 0 1 2.952 3.375 1 1 0 1 0 1.948-.45c-.507-2.2-2.082-4-4.195-4.796z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(PoundsIcon);
+module.exports = ForwardRef;

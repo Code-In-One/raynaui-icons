@@ -1,0 +1,24 @@
+import * as React from "react";
+function PcLockIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 25 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M1.5 7.4a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4V11a1 1 0 0 1-.042.289 2.67 2.67 0 0 1 1.459 2.378v.357a2.33 2.33 0 0 1 1.333 2.11V18a2 2 0 0 1-2 2h-4a2 2 0 0 1-1.99-1.8H11.5v.4h1.25a1 1 0 1 1 0 2h-4.5a1 1 0 0 1 0-2H9.5v-.4h-4a4 4 0 0 1-4-4zm12.75 8.8v-.067c0-.93.545-1.734 1.333-2.108v-.358c0-1.215.812-2.24 1.923-2.562A1 1 0 0 1 17.5 11V7.4a2 2 0 0 0-2-2h-10a2 2 0 0 0-2 2v6.8a2 2 0 0 0 2 2zm3.333-2.533a.667.667 0 0 1 1.334 0v.133h-1.334zm-1.333 2.466c0-.184.15-.333.333-.333h3.334c.184 0 .333.15.333.333V18h-4z",
+    clipRule: "evenodd"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(PcLockIcon);
+export default ForwardRef;
