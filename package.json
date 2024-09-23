@@ -1,8 +1,8 @@
 {
-  "name": "rayna-icons",
-  "version": "1.0.0",
+  "name": "raynaui-icons",
+  "license": "MIT",
+  "version": "0.1.0",
   "description": "Icons set from Rayna UI design kit",
-  "main": "index.ts",
   "scripts": {
     "verify": "node ./scripts/verify-names.js",
     "build": "npm run build-light && npm run build-solid && npm run build-react && npm run build-vue",
@@ -21,8 +21,12 @@
     "Rayna UI",
     "Icons"
   ],
+  "files": [
+    "README.md",
+    "light/",
+    "solid/"
+  ],
   "author": "mycreedo",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Code-In-One/rayna-icons/issues"
   },

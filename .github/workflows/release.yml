@@ -51,11 +51,11 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish `@raynaui-icons/react`
-        run: npm publish ./react --provenance --tag latest
+        run: npm publish ./packages/react --provenance --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish `@raynaui-icons/vue`
-        run: npm publish ./vue --provenance --tag latest
+        run: npm publish ./packages/vue --provenance --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
