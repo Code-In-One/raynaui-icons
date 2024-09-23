@@ -11,7 +11,7 @@
   },
   "sideEffects": false,
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "peerDependencies": {},
   "exports": {

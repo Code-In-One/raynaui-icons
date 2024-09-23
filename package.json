@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/Code-In-One/rayna-icons.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "Rayna",
     "Rayna Icons",
