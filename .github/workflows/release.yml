@@ -46,16 +46,16 @@ jobs:
           echo "RELEASE_CHANNEL=$(npm run release-channel --silent)" >> $GITHUB_ENV
 
       - name: Publish `raynaui-icons`
-        run: npm publish --provenance --tag latest
+        run: npm publish --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish `@raynaui-icons/react`
-        run: npm publish ./packages/react --provenance --tag latest
+        run: npm publish ./packages/react --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish `@raynaui-icons/vue`
-        run: npm publish ./packages/vue --provenance --tag latest
+        run: npm publish ./packages/vue --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
