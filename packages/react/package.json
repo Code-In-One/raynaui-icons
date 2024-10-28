@@ -1,7 +1,7 @@
 {
   "name": "@raynaui-icons/react",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "keywords": [],
   "homepage": "https://github.com/Code-In-One/rayna-icons#readme",
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": ">= 16"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0"
   },
   "exports": {
     ".": {
