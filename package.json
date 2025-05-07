@@ -1,7 +1,7 @@
 {
   "name": "raynaui-icons",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Icons set from Rayna UI design kit",
   "scripts": {
     "verify": "node ./scripts/verify-names.js",
@@ -9,11 +9,12 @@
     "build-react": "node ./scripts/build.js react",
     "build-vue": "node ./scripts/build.js vue",
     "build-light": "rimraf ./src/optimized/light && svgo --config=svgo.light.mjs -f ./src/raw/light -o ./src/optimized/light --pretty",
-    "build-solid": "rimraf ./src/optimized/solid && svgo --config=svgo.solid.mjs -f ./src/raw/solid -o ./src/optimized/solid --pretty"
+    "build-solid": "rimraf ./src/optimized/solid && svgo --config=svgo.solid.mjs -f ./src/raw/solid -o ./src/optimized/solid --pretty",
+    "publish-all": "cd packages/react && npm publish && cd ../vue && npm publish && cd ../.."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Code-In-One/rayna-icons.git"
+    "url": "git+https://github.com/code-in-one/rayna-icons.git"
   },
   "publishConfig": {
     "access": "public"
@@ -31,9 +32,9 @@
   ],
   "author": "mycreedo",
   "bugs": {
-    "url": "https://github.com/Code-In-One/rayna-icons/issues"
+    "url": "https://github.com/code-in-one/rayna-icons/issues"
   },
-  "homepage": "https://github.com/Code-In-One/rayna-icons#readme",
+  "homepage": "https://github.com/code-in-one/rayna-icons#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-react-jsx": "^7.12.12",
